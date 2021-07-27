@@ -6,6 +6,9 @@ $(function() {
     setTimeout(function() {
       $("#flash_message").removeClass();
       $(".alert-sound").removeClass("active");
+      setTimeout(function() {
+        location.reload()
+      },200);
     },5000);
   });
   $(".show-error").click(function() {
@@ -15,6 +18,9 @@ $(function() {
     setTimeout(function() {
       $("#error_message").removeClass();
       $(".error-sound").removeClass("active");
+      setTimeout(function() {
+        location.reload()
+      },200);
     },5000);
   });
 });
