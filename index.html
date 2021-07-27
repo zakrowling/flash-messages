@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+<h3>Flash messages</h3>
+<p>These are messages that appear during transitional steps for users to affirm something positive or warn of an issue. This example holds for 5 seconds then disappears.</p>
+<p>You'll have to reload the page after each flash message launches.</p>
+
+<h4><a href="javascript:;" class="show-success">Launch flash alert (with sound) &raquo;</a></h4>
+
+<h4><a href="javascript:;" class="show-error">Launch flash error (with sound) &raquo;</a></h4>
+
+<div id="flash_message">
+  <i class="las la-check-circle"></i>
+  <div class="message">
+    Your payment was processed successfully.<br />
+    <a href="javascript:;">View details</a>
+  </div>
+</div>
+
+<div id="error_message">
+  <i class="las la-exclamation-circle"></i>
+  <div class="message">
+    Your payment has failed.<br />
+    <a href="javascript:;">View details</a>
+  </div>
+</div>
+
+<embed class="alert-sound" src="https://www.zakrowling.com/resources/sounds/bell.mp3" />
+
+<embed class="error-sound" src="https://www.zakrowling.com/resources/sounds/error.mp3" />
