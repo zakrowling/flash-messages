@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap");
+body {
+  font-family: "Lato";
+  background: #FAFAFA;
+}
+
+a {
+  color: #DF0074;
+  font-weight: 400;
+}
+
+#flash_message,
+#error_message {
+  position: absolute;
+  top: -100px;
+  right: 30px;
+  display: flex;
+  background: #fff;
+  color: #fff;
+  padding: 1rem 1.5rem 1rem 1rem;
+  font-size: 14px;
+  line-height: 1.4rem;
+  background: #11B44E;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+#flash_message.success,
+#error_message.success {
+  animation: flash-message 5s ease-in-out 1;
+}
+#flash_message .las,
+#error_message .las {
+  color: #fff;
+  font-size: 1.5rem;
+}
+#flash_message .message,
+#error_message .message {
+  padding-left: 0.6rem;
+  font-weight: 600;
+}
+#flash_message a,
+#error_message a {
+  color: #fff;
+}
+
+#error_message {
+  background-color: #DF1E0E;
+}
+
+.alert-sound,
+.error-sound {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.alert-sound.active,
+.error-sound.active {
+  display: block;
+}
+
+@keyframes flash-message {
+  0%, 100% {
+    transform: translateY(-100px);
+  }
+  7%, 93% {
+    transform: translateY(130px);
+  }
+}
