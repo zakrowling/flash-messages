@@ -1,8 +1,13 @@
+import confetti from "https://cdn.skypack.dev/canvas-confetti";
+
 $(function() {
   $(".show-success").click(function() {
     $("#flash_message").removeClass();
     $("#flash_message").addClass("success");
     $(".alert-sound").addClass("active");
+    
+    confettiCannon();
+    
     setTimeout(function() {
       $("#flash_message").removeClass();
       $(".alert-sound").removeClass("active");
@@ -27,3 +32,13 @@ $(function() {
     },5000);
   });
 });
+
+function confettiCannon() {
+  setTimeout(function() {
+    confetti({
+      particleCount: 200,
+      spread: 160,
+      origin: { x: 1, y: 1 }
+    });
+  }, 500);
+}
