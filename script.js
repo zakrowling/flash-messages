@@ -31,6 +31,17 @@ $(function() {
       $(".error-sound").removeClass("active");
     },5000);
   });
+  
+  $(".play").click(function() {
+    $(".notification-sound").addClass("active");
+    $(".notification-bell.first").addClass("animated");
+    
+    setTimeout(function() {
+      $(".notification-bell.first").removeClass("animated");
+      $(".notification-sound").removeClass("active");
+    },4000);
+  });
+  
 });
 
 function confettiCannon() {
