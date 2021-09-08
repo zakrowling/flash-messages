@@ -9,6 +9,7 @@ body {
   width: 200px;
   background: #fff;
   padding: 0 50px 50px 50px;
+  text-align: center;
   border: 1px #efefef solid;
 }
 
@@ -89,6 +90,9 @@ h3 {
   font-size: 2em;
   color: #6B7683;
   animation: ring-bell 1s ease-in-out 1;
+  text-align: center;
+  width: 40px;
+  margin: 0 auto;
 }
 .notification-bell .count {
   position: absolute;
