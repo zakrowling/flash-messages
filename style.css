@@ -83,10 +83,9 @@ h3 {
 
 .notification-bell {
   position: relative;
-}
-.notification-bell.animated i {
   animation: ring-bell 1s ease-in-out 1;
 }
+
 .notification-bell i {
   font-size: 2em;
   color: #6B7683;
