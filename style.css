@@ -99,7 +99,7 @@ h3 {
   text-align: center;
   color: #fff;
 }
-.notification-bell .count.pulse {
+.notification-bell .count {
   animation: pulse 2s ease-in-out infinite;
 }
 
