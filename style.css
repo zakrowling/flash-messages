@@ -4,6 +4,14 @@ body {
   background: #FAFAFA;
 }
 
+.contain {
+  margin: 0 auto;
+  width: 200px;
+  background: #fff;
+  padding: 20px;
+  border: 1px #efefef solid;
+  margin: 20px;
+
 a {
   color: #DF0074;
   font-weight: 400;
