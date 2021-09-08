@@ -35,6 +35,7 @@ $(function() {
     setTimeout(function() {
       $(".notification-bell.first").removeClass("animated");
       $(".notification-sound").removeClass("active");
+      location.reload();
     },4000);
   });
   
