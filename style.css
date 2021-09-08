@@ -84,15 +84,15 @@ h3 {
 
 .notification-bell {
   position: relative;
+  text-align: center;
+  width: 40px;
+  margin: 0 auto;
 }
 
 .notification-bell i {
   font-size: 2em;
   color: #6B7683;
   animation: ring-bell 1s ease-in-out 1;
-  text-align: center;
-  width: 40px;
-  margin: 0 auto;
 }
 .notification-bell .count {
   position: absolute;
