@@ -10,12 +10,9 @@ body h1 {
 }
 
 .container {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  height: 50px;
   width: 230px;
   margin: 2em auto;
   padding: 20px;
-  border-radius: 10px;
 }
 .container button {
   margin: 1em 0.8em;
@@ -24,6 +21,6 @@ body h1 {
 .container button a {
   text-decoration: none;
   color: black;
-  padding: 5px;
+  padding: 10px;
   font-size: 13pt;
 }
