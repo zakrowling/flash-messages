@@ -28,10 +28,9 @@ dntrigger.addEventListener('click', function(e) {
       'New message From Nick', {
         body: 'Hi John, I have sent through all of the documents. Cheers.',
         icon: 'https://app.visory.com.au/users/azuread-b79580cb-2278-4fcb-90aa-60111a1ae980/photo?secondary=false&getMaxSize=false',
-        tag: '123456'
       });
     notify.onclick = function() {
-      window.location = '?message=' + this.tag;
+      window.location = 'https://app.visory.com.au/timelines/';
     }
   }
 })
