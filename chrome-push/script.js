@@ -1,20 +1,15 @@
 var dnperm = document.getElementById('dnperm');
 var dntrigger = document.getElementById('dntrigger');
 
-//Request permission
-dnperm.addEventListener('click', function(e) {
-  e.preventDefault();
-  if (!window.Notification) {
-    alert('Sorry no notification');
-  } else {
-    Notification.requestPermission(function(p) {
-      if (p === 'denied') {
-        alert('You have denied notifications');
-      } else if (p === 'granted') {
-        alert('You have allowed notifications!');
-      }
-    });
-  }
+// Request permission
+document.addEventListener("DOMContentLoaded", function() {
+  Notification.requestPermission(function(p) {
+    if (p === 'denied') {
+      alert('You have denied notifications');
+    } else if (p === 'granted') {
+      alert('You have allowed notifications!');
+    }
+  });
 });
 
 //Simulate an event
